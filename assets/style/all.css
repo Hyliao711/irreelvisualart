@@ -1,7 +1,217 @@
+/* 40 */
+/* 36 */
+/* 32 */
+/* 28 */
+/* 24 */
+/* 20 */
+/* 14 */
+body {
+  font-family: 'Cardo', serif;
+  color: #FFF;
+}
+
+.h-10 {
+  height: 100vh;
+}
+
+.h-60 {
+  height: 21.875rem;
+}
+
+@media (min-width: 768px) {
+  .h-60 {
+    height: 31.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .h-60 {
+    height: 37.5rem;
+  }
+}
+
+.fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-blend {
+  opacity: 0.3;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-top {
+  z-index: 3;
+}
+
+.ff-red {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
 .index__h1 {
   color: #00cc99;
   font-size: 20px;
   font-weight: 400;
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  /* display: none; */
+  opacity: 0;
+  -webkit-transition: opacity 2.5s ease-in-out;
+  -o-transition: opacity 2.5s ease-in-out;
+  transition: opacity 2.5s ease-in-out;
+}
+
+.menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 3;
+}
+
+.menu-burger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: absolute;
+}
+
+.menu-burger::before,
+.menu-burger::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: absolute;
+}
+
+.menu-burger::before {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.menu-burger::after {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.menu-btn.open .menu-burger {
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+      -ms-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+      -ms-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media (max-width: 991.98px) {
+  .dropdown {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-transform: translateX(100vw);
+        -ms-transform: translateX(100vw);
+            transform: translateX(100vw);
+    background-color: #000;
+    z-index: 2;
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    transition: -webkit-transform 0.1s ease-in-out;
+    -o-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dropdown.open {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.dropdown li a {
+  font-size: 32px;
+}
+
+@media (min-width: 992px) {
+  .dropdown li a {
+    font-size: 20px;
+  }
+}
+
+.topic01 {
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+}
+
+.topic01::after {
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
 }
 
 /*# sourceMappingURL=all.css.map */

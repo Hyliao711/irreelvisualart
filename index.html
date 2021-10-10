@@ -1,232 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Boostrap Index
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+<body class="bg-primary">
+  <nav class="container-fluid d-flex justify-content-between align-items-center pt-md-8 pt-4 ps-4 pe-4 ps-md-9 pe-md-9 position-fixed z-top">
+    <a href="#" class="text-black">
+      <h1 class="fs-5 ff-red"><img src="./assets/images/irreel-sm.png" alt=""></h1>
+    </a>
+    <div class="menu-btn d-lg-none d-flex flex-column">
+      <div class="menu-burger"></div>
+    </div>
+    <ul class="dropdown d-flex flex-lg-row flex-column list-unstyled ff-red">
+      <li><a href="#about" class="ps-lg-8 text-secondary menu-item">About</a></li>
+      <li><a href="#services" class="ps-lg-8 text-secondary menu-item">Services</a></li>
+      <li><a href="#work" class="ps-lg-8 text-secondary menu-item">Works</a></li>
+      <li><a href="#contact" class="ps-lg-8 text-secondary menu-item">Contact</a></li>
+    </ul>
+  </nav>
 
-    
-<div class="container">
-  <div class="main">
-      <div class="about" id="a">
-          <h3 class="headline01">
-              About
-          </h3>
-          <div class="imgBox clearfix">
-              <div class="photoBox"></div>
-              <div class="text">
-                  <h3>關於我們<br>About us</h3>
-                  <div>
-                      Irréel Visual Art 致力於提供不同視覺具象化的設計服務，以精細寫實的視覺表現、渲染過去與未來。<br>The imaginary architectures
-                      rethink the city as a dream landscape, blending memories of the past with visions for the
-                      future.
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="services" id="s">
-          <h3 class="headline01">
-              Services
-          </h3>
-          <div class="horizontal-scroll-wrapper squares ser-container">
-              <div class="child">
-                  <div class="img-box">
-                      <div class="display" style="background-image: url(./images/archviz.JPG);"></div>
-                  </div>
-                  <div class="text-box">
-                      <div class="title">ARCHITECTURAL VISUALISATION</div>
-                      <div class="ser-text">“Light, shadow, texture and color are the tools that we combine to
-                          communicate the values of architecture through an image.”</div>
-                  </div>
-              </div>
-              <div class="child">
-                  <div class="img-box">
-                      <div class="display" style="background-image: url(./images/7.jpg); background-size: cover;">
-                      </div>
-                  </div>
-                  <div class="text-box">
-                      <div class="title">INTERACTIVE VR</div>
-                      <div class="ser-text">Realistic Interactive Stereoscopic 3D 360-degree VR Panoramic Walk-Through Tours for marketing suites and design development for Architects, Interior Designers, and Developer.
-                          </div>
-                  </div>
-              </div>
-              <div class="child">
-                  <div class="img-box">
-                      <div class="display"
-                          style="background-image: url(./images/q3r.jpg); background-size: cover;"></div>
-                  </div>
-                  <div class="text-box">
-                      <div class="title">MODELING</div>
-                      <div class="ser-text">Advanced modeling methods allow realizing explicit, complicated 3D models of textiles, upholstered beds, sofas, and finely detailed organic shapes.</div>
-                  </div>
-              </div>
-              <div class="child">
-                  <div class="img-box">
-                      <div class="display"
-                          style="background-image: url(./images/about.jpg); background-size: cover;"></div>
-                  </div>
-                  <div class="text-box">
-                      <div class="title">ARCHITECTURAL MOVIE</div>
-                      <div class="ser-text">Exterior and Interior Walk-Through/Fly-Through Animations - Marvelous, exuberant, atmospheric marketing animations.</div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="works" id="w">
-          <h3 class="headline01">
-              Works
-          </h3>
-          <div class="rotate-box">
-              <div class="rotate">
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-1.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2020</div>
-                          <div class="w-text">僕人建築空間整合</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-2.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2021</div>
-                          <div class="w-text">元佑設計</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-3.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2021</div>
-                          <div class="w-text">元佑設計</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-4.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2019</div>
-                          <div class="w-text">元佑設計</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-5.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2020</div>
-                          <div class="w-text">元佑設計</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-6.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2021</div>
-                          <div class="w-text">元佑設計</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-7.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2020</div>
-                          <div class="w-text">元佑設計</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-8.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2018</div>
-                          <div class="w-text">Irreel</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-9.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2019</div>
-                          <div class="w-text">Irreel</div>
-                      </div>
-                  </div>
-                  <div class="w-box">
-                      <div class="w-img" style="background-image: url(./images/work/work-10.jpg); background-size: cover; width: 550px; height: 700px;"></div>
-                      <div class="w-textbox">
-                          <div class="w-title">2019</div>
-                          <div class="w-text">Irreel</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+  
+<div class="container-fluid intro px-0 mb-17" id="h">
+    <div class="container-fluid d-flex justify-content-center align-items-center h-10 position-relative">
+        <img class="z-2 img-fluid" src="./assets/images/irreel.png" alt="">
+        <div class="bg-primary bg-blend h-10 container-fluid position-absolute"></div>
+    </div>
+    <ul class="list-unstyled intro-slide">
+        <li><img src="./assets/images/3.JPG" class="slide-img img-fluid" alt=""></li>
+        <li><img src="./assets/images/2.jpg" class="slide-img img-fluid" alt=""></li>
+        <li><img src="./assets/images/1.jpg" class="slide-img img-fluid" alt=""></li>
+        <li><img src="./assets/images/4.jpg" class="slide-img img-fluid" alt=""></li>
+        <li><img src="./assets/images/5.jpg" class="slide-img img-fluid" alt=""></li>
+    </ul>
+</div>
 
-      <div class="background" id="c">
-          <div class="container">
-            <div class="screen">
-              <div class="screen-body">
-                <div class="screen-body-item left">
-                  <div class="app-title">
-                    <span>CONTACT</span>
-                    <span>US</span>
-                  </div>
-                  <div class="app-contact">Mail: irreelvisual@gmail.com</div>
-                </div>
-              </div>
+<div class="container-fluid">
+    <div class="pt-17 mb-lg-18 mb-14" id="about">
+        <h2 class="topic01 pb-12 text-center">About</h2>
+    </div>
+    <div class="row mb-17">
+        <div class="col-12 col-lg-5 offset-lg-1 d-flex flex-column justify-content-center mb-14">
+            <h5 class="mb-8 text-center text-lg-start">關於我們<br>About us</h5>
+            <div class="pe-lg-20 text-md-center text-lg-start">
+                Irréel Visual Art 致力於提供不同視覺具象化的設計服務，以精細寫實的視覺表現、渲染過去與未來。<br>The imaginary architectures
+                rethink the city as a dream landscape, blending memories of the past with visions for the
+                future.
             </div>
-          </div>
         </div>
-
-      <footer class="text-footer">
-          <div class="copyright">
-              © 2021 IRREEL. All rights reserved.
-          </div>
-          <div class="footer-icon">
-              <a class="btn btn-light" target="_blank" href="https://www.facebook.com/STONE-Visual-Studio-294266148079009/"><i class="fab fa-facebook-f"></i>
-              </a>
-              <a class="btn btn-light" target="_blank" href="https://instagram.com/irreel_visual?igshid=1x4po6czagywv"><i class="fab fa-instagram"></i>
-              </a>
-          </div>
-          <div class="createdBy">
-              Created by Irreel
-          </div>
-      </footer>
-  </div>
+        <div class="col-12 col-lg-6 pe-lg-0 px-0">
+            <img src="./assets/images/3.JPG" class="img-fluid fit h-60" alt="">
+        </div>
+    </div>
+    <div class="pt-17 mb-18" id="services">
+        <h2 class="topic01 pb-12 text-center">Services</h2>
+    </div>
+    <div class="row mb-17">
+        <div class="col-12 col-lg-5 offset-lg-1 d-flex flex-column justify-content-center mb-14">
+            <h5 class="mb-8 text-center text-lg-start">關於我們<br>About us</h5>
+            <div class="pe-lg-20 text-md-center text-lg-start">
+                Irréel Visual Art 致力於提供不同視覺具象化的設計服務，以精細寫實的視覺表現、渲染過去與未來。<br>The imaginary architectures
+                rethink the city as a dream landscape, blending memories of the past with visions for the
+                future.
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 pe-lg-0 px-0">
+            <img src="./assets/images/3.JPG" class="img-fluid fit h-60" alt="">
+        </div>
+    </div>
 </div>
 
 <!-- Button trigger modal -->
@@ -260,6 +113,6 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+</body>
 
 </html>
