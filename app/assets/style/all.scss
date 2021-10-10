@@ -1,1 +1,10 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+
+// breakpoints 是在 mixins 的檔案內
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+
+@import './base/base';
+@import './setting/until';
 @import './layout/_index.scss';
