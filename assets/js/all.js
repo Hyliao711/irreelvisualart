@@ -37,4 +37,20 @@ function nextImages() {
   slideshowImages[currentImagesCounter].style.opacity = 1;
   slideshowImages[currentImagesCounter].style.zIndes = -1;
 }
+"use strict";
+
+var swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  mousewheel: {
+    invert: false,
+    releaseOnEdges: true,
+    sensitivity: 2
+  }
+});
 //# sourceMappingURL=all.js.map
