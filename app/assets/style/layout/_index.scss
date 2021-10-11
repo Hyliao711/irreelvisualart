@@ -115,3 +115,52 @@
   transform: translateX(-50%);
   content: '';
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: auto;
+  align-items: center;
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 70%;
+  } 
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-slide {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 70%;
+  }  
+}
+
+.page-section {
+  padding-top: 22.5rem;
+  padding-bottom: 22.5rem;
+  @include media-breakpoint-down(lg) {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
