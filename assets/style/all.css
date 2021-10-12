@@ -362,6 +362,28 @@ img {
   }
 }
 
+.img-box__15 {
+  width: 345px;
+  height: 400px;
+  background-image: url(../images/work/work-11.jpeg);
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .img-box__15 {
+    width: 100%;
+    height: 600px;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-box__15 {
+    width: 550px;
+    height: 700px;
+  }
+}
+
 .text-box__01 {
   width: 345px;
 }
